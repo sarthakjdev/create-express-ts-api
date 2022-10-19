@@ -1,0 +1,27 @@
+{
+  "name": "create-express-ts-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "author": {
+    "name": "Sarthak Jain",
+    "email": "contact.sarthakjain@gmail.com"
+  },
+  "keywords": [
+    "express",
+    "ts",
+    "typescript",
+    "express-server",
+    "rest-api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarthakjdev/create-express-ts-api"
+  },
+  "bin": "./bin/index.js",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.1.2"
+  }
+}

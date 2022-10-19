@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  postgres:
+    container_name: dev-postgres
+    image: postgres
+    environment:
+      - POSTGRES_USER=johndoe
+      - POSTGRES_DB=mydb
+      - POSTGRES_PASSWORD=randompassword
+    volumes:
+      - dev-postgres-data:/var/lib/postressql/data 
+    ports:
+      - "5431:5432"
+  
+volumes:
+  dev-postgres-data:
