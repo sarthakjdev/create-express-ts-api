@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.js",
+  "main": "./index.js",
   "author": {
     "name": "Sarthak Jain",
     "email": "contact.sarthakjain@gmail.com"
@@ -19,9 +19,10 @@
     "type": "git",
     "url": "https://github.com/sarthakjdev/create-express-ts-api"
   },
-  "bin": "./bin/index.js",
+  "bin": "./index.js",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.1.2"
+    "chalk": "^5.1.2",
+    "edit-json-file": "^1.7.0"
   }
 }

@@ -4,6 +4,7 @@ import chalk from 'chalk'
 import { execSync } from 'child_process'
 import * as fs from 'fs'
 import * as path from 'path'
+import editJsonFile from 'edit-json-file'
 import * as url from 'url';
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
@@ -18,20 +19,30 @@ const runCommand = async (command) => {
 }
 
 const getNewProjectPath = async (currentDir, projectName) => {
-    let newProjectPath = `${currentDir}/${projectName}`
-    if (fs.existsSync(newProjectPath)) {
-        throw chalk.red('Directory Already exists, please try a different name')
-    } else {
-        fs.mkdirSync(newProjectPath)
+    try {
+        let newProjectPath = `${currentDir}/${projectName}`
+        if (fs.existsSync(newProjectPath)) {
+             console.log(chalk.red('Directory Already exists, please try a different name'))
+             return process.exit(-1)
+        } else {
+            fs.mkdirSync(newProjectPath)
+        }
+        return newProjectPath
+    } catch (error) {
+        throw chalk.red(error)
     }
-    return newProjectPath
 }
 
 const renaming = async (projectPath, projectName) => {
-    fs.renameSync(`${projectPath}/env`, `${projectPath}/.env`)
-    const packageJsonContent = fs.readFileSync(`${projectPath}/package.json`)
-    packageJsonContent.name = projectName
-    fs.writeFileSync(`${projectPath}/package.json` , packageJsonContent)
+    try {
+        fs.renameSync(`${projectPath}/env`, `${projectPath}/.env`)
+        const packageJsonFile = editJsonFile(`${projectPath}/package.json`)
+        packageJsonFile.set("name" , projectName)
+        packageJsonFile.save()
+    } catch (error) {
+        throw chalk.red(error)
+        
+    }
 }
 
 const getProjectName = async () => {
@@ -44,20 +55,24 @@ const getProjectName = async () => {
 }
 
 const generateProject = async (starterKit, projectPath) => {
-    const dirsToCopy = fs.readdirSync(starterKit)
-    dirsToCopy.forEach((file) => {
-        const orgFilePath = path.join(starterKit, `${file}`)
-        const fileStats = fs.statSync(orgFilePath)
-        if (fileStats.isFile()) {
-            const contentToWrite = fs.readFileSync(orgFilePath, 'utf-8')
-            const writePath = `${projectPath}/${file}`
-            fs.writeFileSync(writePath, contentToWrite, 'utf-8')
-        } else if (fileStats.isDirectory()) {
-            fs.mkdirSync(`${projectPath}/${file}`)
-
-            generateProject(`${starterKit}/${file}`, `${projectPath}/${file}`)
-        }
-    })
+    try {
+        const dirsToCopy = fs.readdirSync(starterKit)
+        dirsToCopy.forEach((file) => {
+            const orgFilePath = path.join(starterKit, `${file}`)
+            const fileStats = fs.statSync(orgFilePath)
+            if (fileStats.isFile()) {
+                const contentToWrite = fs.readFileSync(orgFilePath, 'utf-8')
+                const writePath = `${projectPath}/${file}`
+                fs.writeFileSync(writePath, contentToWrite, 'utf-8')
+            } else if (fileStats.isDirectory()) {
+                fs.mkdirSync(`${projectPath}/${file}`)
+    
+                generateProject(`${starterKit}/${file}`, `${projectPath}/${file}`)
+            }
+        })
+    } catch (error) {
+        throw chalk.red(error)
+    }
 }
 
 const success = (projectName) => {
@@ -91,7 +106,7 @@ const success = (projectName) => {
 }
 
 const execute = async () => {
-    const starterKit = path.join(__dirname, '../starter-kit')
+    const starterKit = path.join(__dirname, './starter-kit')
     const projectName = await getProjectName()
     const newProjectPath = await getNewProjectPath(CURR_DIR, projectName)
 
