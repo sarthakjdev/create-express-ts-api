@@ -123,7 +123,7 @@ Distributed under the MIT License. See [`LICENCE`](https://github.com/sarthakjde
 
 ## Contact
 
-Rishabh malhotraa - [@sarthakjdev](https://twitter.com/sarthakjdev) 
+Sathakjdev - [@sarthakjdev](https://twitter.com/sarthakjdev) 
 
 Email Id : contact.sarthakjain@gmail.com
 
