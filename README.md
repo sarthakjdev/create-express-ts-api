@@ -4,7 +4,16 @@
     <strong>
       A starter to kit for developing  REST API in typescript and express.
   </p>
+  
 <!-- PROJECT SHIELDS -->
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+
+  
 <br></br>
 
 ![restapi](https://user-images.githubusercontent.com/72249059/197589566-b2de5f90-1ddb-4d89-9811-e4da022bdd54.jpg)
@@ -12,6 +21,7 @@
 
 <br />
 
+---
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
