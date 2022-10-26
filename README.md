@@ -103,7 +103,35 @@ npm run dev:db
 npm run db-generate
 ```
 ---
+## Contributing
 
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+Refer to this [Contribution.md](https://github.com/sarthakjdev/create-express-ts-api/blob/main/Contributing.md) if you have any difficulty in making a pull request
+
+## License
+
+Distributed under the MIT License. See [`LICENCE`](https://github.com/sarthakjdev/create-express-ts-api/blob/main/LICENSE) for more information.
+
+---
+
+## Contact
+
+Rishabh malhotraa - [@sarthakjdev](https://twitter.com/sarthakjdev) 
+
+Email Id : contact.sarthakjain@gmail.com
+
+Discord : Sarthak Jain#2443
+
+LinkedIn: [LinkedIn](https://www.linkedin.com/in/sarthakjdev/)
+
+---
 ## Documentation
 
 To know more details about it refer to the blog: [Hashnode](https://blog.sarthakjdev.com/develop-rest-apis)
