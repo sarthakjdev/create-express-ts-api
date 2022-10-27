@@ -130,7 +130,7 @@ Distributed under the MIT License. See [`LICENCE`](https://github.com/sarthakjde
 
 ## Contact
 
-Sathakjdev - [@sarthakjdev](https://twitter.com/sarthakjdev) 
+Sarthak Jain - [@sarthakjdev](https://twitter.com/sarthakjdev) 
 
 Email Id : contact.sarthakjain@gmail.com
 
