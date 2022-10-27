@@ -75,6 +75,8 @@ Install [NodeJS LTS](https://nodejs.org/en/)
 
    ```After this follow the steps to setup the Development DB: ```<a href="#Setting-up-Development-DB">Setting up Development DB</a>
 
+> **Note** **If facing any issues, feel free to raise a [issue](https://github.com/sarthakjdev/create-express-ts-api/issues) or head towards <a href="#Contact">Contact section</a> **
+
 3. Start the server by running the following command
 
    ```sh
