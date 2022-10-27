@@ -67,7 +67,7 @@ Install [NodeJS LTS](https://nodejs.org/en/)
 
    example : `npx create-express-ts-api Firstapi`
 
-3. Install NPM packages
+2. Install NPM packages
 
    ```sh
    npm install
@@ -75,7 +75,7 @@ Install [NodeJS LTS](https://nodejs.org/en/)
 
    ```After this follow the steps to setup the Development DB: ```<a href="#Setting-up-Development-DB">Setting up Development DB</a>
 
-4. Start the server by running the following command
+3. Start the server by running the following command
 
    ```sh
    npm run dev
