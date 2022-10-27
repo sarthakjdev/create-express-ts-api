@@ -1,35 +1,34 @@
-name: pull request
-description: Create a pull request
-title: "[PULL REQUEST] <pull request details>"
-labels: [enhancement]
-body:
-  - type: textarea
-    id: description
-    attributes:
-      label: Description of the changes, you have made.(Mention the issue number, it solves.)
-    validations:
-      required: true
-  - type: textarea
-    id: workingenvironment
-    attributes:
-      label: Mention if the changes are for any specific Working Environment (e.g. operating system, browser, device, N/A) 
-    validations:
-      required: true
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: Please add some pictorial references to these changes, if applicable (Drag & Drop your ss below)
-    validations:
-      required: false
-  - type: textarea
-    id: solution
-    attributes:
-      label: Does your code changes make any other feature broke? (If Yes, State reason)
-    validations:
-      required: true
-  - type: textarea
-    id: context
-    attributes:
-      label: Any other context or any note for reviewer, to add here regarding this change.
-    validations:
-      required: false
+<!-- If your PR fixes an open issue, use `Closes #999` to link your PR with the issue. #999 stands for the issue number you are fixing -->
+
+## Fixes Issue
+
+<!-- Remove this section if not applicable -->
+
+<!-- Example: Closes #31 -->
+
+## Changes proposed
+
+<!-- List all the proposed changes in your PR -->
+
+<!-- Mark all the applicable boxes. To mark the box as done follow the following conventions -->
+<!--
+[x] - Correct; marked as done
+[X] - Correct; marked as done
+[ ] - Not correct; marked as **not** done
+-->
+
+## Check List (Check all the applicable boxes) <!-- Follow the above conventions to check the box -->
+
+- [ ] My code follows the code style of this project.
+- [ ] My change requires changes to the documentation.
+- [ ] I have updated the documentation accordingly.
+- [ ] This PR does not contain plagiarized content.
+- [ ] The title of my pull request is a short description of the requested changes.
+
+## Screenshots
+
+<!-- Add all the screenshots which support your changes -->
+
+## Note to reviewers
+
+<!-- Add notes to reviewers if applicable -->
