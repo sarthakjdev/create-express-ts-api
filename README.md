@@ -6,12 +6,16 @@
   </p>
   
 <!-- PROJECT SHIELDS -->
-[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+<div align="center">
+
+  <a href="">[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)</a>
+  <a href="">![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)</a>
+  <a href="">[<img src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white">](https://www.npmjs.com/package/create-express-ts-api)</a>
+  <a href="">![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)</a>
+  <a href="">![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)</a>
+  <a href="">![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)</a>
+
+</div>
 
   
 <br></br>
@@ -69,7 +73,9 @@ Install [NodeJS LTS](https://nodejs.org/en/)
    npm install
    ```
 
-4. Start the react and nodejs server concucrrently
+   ```After this follow the steps to setup the Development DB: ```<a href="#Setting-up-Development-DB">Setting up Development DB</a>
+
+4. Start the server by running the following command
 
    ```sh
    npm run dev
@@ -85,16 +91,7 @@ Install [NodeJS LTS](https://nodejs.org/en/)
 - [Prisma (as ORM)](https://www.prisma.io/docs/getting-started)
 
 ---   
-## Understanding the folder structure 
 
-It is a  starter to kit for developing REST API in typescript and express, where you can build your own rest api
- - routes
- - controllers
- - models
- - prisma
- - database
-
----
 ### Setting up Development DB
 
 To setup the DB follow the steps:
