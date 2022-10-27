@@ -36,7 +36,6 @@
     <li>
       <a href="#Tech-Stack-Used">Tech stack used</a>
     </li>
-    <li><a href="#Understanding-the-folder-structure">Understanding the folder structure</a></li>
     <li><a href="#Setting-up-Development-DB">Setting up Development DB</a></li>
     <li><a href="#Documentation">Documentation</a></li>
   </ol>
@@ -45,7 +44,7 @@
 ---
 ## Getting Started
 
-Follow the instructions to set up the project on your local machine.
+Follow the instructions to initialize your express-ts-api project using this starter kit:
 
 ### Prerequisites
 
