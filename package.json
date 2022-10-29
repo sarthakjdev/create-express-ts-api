@@ -8,6 +8,9 @@
     "name": "Sarthak Jain",
     "email": "contact.sarthakjain@gmail.com"
   },
+  "scripts": {
+    "prepare": "husky install"
+  },
   "keywords": [
     "express",
     "ts",
@@ -24,5 +27,8 @@
   "dependencies": {
     "chalk": "^5.1.2",
     "edit-json-file": "^1.7.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1"
   }
 }

@@ -25,7 +25,7 @@
             "@factory/*": ["./src/models/factory/*"],
             "@api/*": ["./src/models/api/*"],
             "@helpers/*": ["./src/helpers/*"]
-        },
+        }
     },
     "ts-node": {
         "files": true
