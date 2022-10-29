@@ -41,7 +41,7 @@ const renaming = async (projectPath, projectName) => {
         packageJsonFile.save()
     } catch (error) {
         throw chalk.red(error)
-        
+
     }
 }
 
@@ -66,7 +66,7 @@ const generateProject = async (starterKit, projectPath) => {
                 fs.writeFileSync(writePath, contentToWrite, 'utf-8')
             } else if (fileStats.isDirectory()) {
                 fs.mkdirSync(`${projectPath}/${file}`)
-    
+
                 generateProject(`${starterKit}/${file}`, `${projectPath}/${file}`)
             }
         })
@@ -78,7 +78,7 @@ const generateProject = async (starterKit, projectPath) => {
 const success = (projectName) => {
     const successText = `Success! Created ${chalk.cyan(
         projectName
-    )} at ${chalk.cyan(CURR_DIR)} 
+    )} at ${chalk.cyan(CURR_DIR)}
       \n\nRun the following to get started:\n\n\t
       ${chalk.cyan('cd')} ${projectName}
       \n    Changes directory
@@ -89,7 +89,7 @@ const success = (projectName) => {
       \n  ${chalk.cyan('npm run build')}
       \n    Builds the app.
       \n  ${chalk.cyan('npm run lint')}
-      \n    Checks if the code is linted correctly. 
+      \n    Checks if the code is linted correctly.
       \n  ${chalk.cyan('npm run lint:fix')}
       \n   Fix the linting erros.
       \n  ${chalk.cyan('npm run dev')}
@@ -119,7 +119,7 @@ const execute = async () => {
 
     await runCommand(` cd ${newProjectPath} &&  npm install`)
 
-    await runCommand('git init')
+    await runCommand(`cd ${projectName} && git init`)
     console.log(chalk.green('Project Setup done'))
 
     success(projectName)
